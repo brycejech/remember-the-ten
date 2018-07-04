@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}" dir="ltr">
+
+    {%- include head.html -%}
+
+    <body>
+
+        <div id="page-wrapper">
+
+            {%- include header.html -%}
+
+            <main class="page-content" aria-label="Content">
+                <div class="wrapper">
+                    {{ content }}
+                </div>
+            </main>
+
+        </div>
+
+        {%- include footer.html -%}
+
+    </body>
+
+    <script>
+    'use strict';
+
+    (function(){
+        const body = document.body,
+              ftr  = body.querySelector('footer');
+
+        const ftrHeight = parseInt(getComputedStyle(ftr).height);
+
+        body.style['padding-bottom'] = (ftrHeight + 25) + 'px';
+    })();
+    </script>
+
+</html>

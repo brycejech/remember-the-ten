@@ -1,0 +1,41 @@
+@charset "utf-8"
+
+@import 'theme/colors'
+@import 'theme/utils'
+
+*
+    box-sizing: border-box
+
+html,
+body
+    margin: 0
+    padding: 0
+
+html
+    min-height: 100%
+
+body
+    position: relative
+    min-height: 100vh
+    color: #333
+    font-weight: 400
+
+#page-wrapper
+    min-height: 100%
+
+@import 'theme/nav'
+
+
+
+.container
+    border: 1px solid $gray
+
+
+footer,
+#footer,
+.footer
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    border-top: 1px solid $gray
