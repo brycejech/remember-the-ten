@@ -34,7 +34,7 @@ layout: default
 
         {%- for person in site.the_ten -%}
             <div class="person card">
-                <img src="{{ baseurl }}/assets/img/{{ person.headshot }}" alt="{{ person.name }}" class="headshot">
+                <img src="{{ site.baseurl }}/assets/img/{{ person.headshot }}" alt="{{ person.name }}" class="headshot">
                 <div class="info">
                     <span class="name">{{ person.name }}</span><br>
                     <span class="role">{{ person.role }}</span><br>
