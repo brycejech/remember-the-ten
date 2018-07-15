@@ -1,0 +1,40 @@
+
+{%- for person in site.data.scholarship[include.year] -%}
+    <div class="col-lg-4 col-md-6">
+        <div class="scholarship-winner card">
+
+            {% if person.headshot %}
+                <img class="headshot" src="{{ site.baseurl }}/assets/img/scholarship-winners/{{ person.headshot }}">
+            {% else %}
+                <div class="headshot placeholder"></div>
+            {% endif %}
+
+            <h3 class="name orange-text">{{ person.name }}</h3>
+
+            <p>
+                {{ person.about | truncate: 200 }}
+                <div class="u-cb"></div>
+            </p>
+            <button class="btn btn-block" data-toggle="modal" data-target="#{{ person.id }}">About</button>
+        </div>
+    </div>
+
+    <div id="{{ person.id }}" class="modal modal-md scholarship-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-close">&times;</div>
+                <div>
+                    {% if person.headshot %}
+                        <img class="headshot" src="{{ site.baseurl }}/assets/img/scholarship-winners/{{ person.headshot }}">
+                    {% else %}
+                        <div class="headshot placeholder"></div>
+                    {% endif %}
+                </div>
+                <h1 class="u-cntr orange-text">{{ person.name }}</h1>
+                <p>
+                    {{ person.about }}
+                </p>
+            </div>
+        </div>
+    </div>
+{%- endfor -%}

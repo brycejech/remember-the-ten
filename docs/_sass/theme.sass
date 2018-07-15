@@ -43,6 +43,10 @@ body
     background-color: $gray
     color: $white
 
+    outline: none
+    border: none
+    cursor: pointer
+
     transition: all .25s ease
 
     &:hover
@@ -53,13 +57,20 @@ body
     width: 100%
     text-align: center
 
+.orange-text
+    color: $dark-orange
+
+.modal-close
+    font-size: 3.6rem
+    line-height: .7
+
 @import 'theme/nav'
 
 @import 'theme/home'
 
 .container
     padding: 25px
-    background-color: white
+    // background-color: white
 
 
 footer,
@@ -118,3 +129,64 @@ footer,
         @media screen and (min-width: 768px)
             float: left
             margin-right: 10px
+
+//  ========================
+//  SCHOLARSHIP WINNERS PAGE
+//  ========================
+
+.scholarship-winner
+
+    .headshot
+        display: block
+        float: none
+        margin: 0 auto
+        border-radius: 2px
+        height: 220px
+        width: auto
+
+        overflow: hidden
+
+        @media screen and (min-width: 768px)
+            display: inline-block
+            float: left
+            margin: 15px
+
+        @media screen and (min-width: 992px)
+            display: block
+            float: none
+            margin: 0 auto
+
+        &.placeholder
+            width: 200px
+            background-color: $orange
+
+    .name
+        text-align: center
+
+        @media screen and (min-width: 768px)
+            text-align: left
+        @media screen and (min-width: 992px)
+            text-align: center
+
+    .btn
+        padding: 5px 12px
+        background-color: white
+        color: $gray
+        border: 1px solid $gray
+
+        transition: all .15s ease
+
+        &:hover
+            color: $white
+            background-color: $gray
+
+.scholarship-modal
+    .headshot
+        margin: 20px
+        box-shadow: 1px 1px 1px rgba($gray, .35)
+        max-width: 95%
+        display: block
+        margin: 0 auto
+    p
+        font-size: 1.8rem
+        line-height: 1.3

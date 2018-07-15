@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="post">
+
+    <header class="page-header u-cntr">
+        <h1 class="page-heading">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="container">
+        {% include scholarship-group.html year=page.year %}
+    </div>
+
+</article>
+
+
+<script src="{{ site.baseurl }}/assets/js/same-height.js"></script>
+<script>
+    'use strict';
+    sameHeight('.scholarship-winner');
+</script>
