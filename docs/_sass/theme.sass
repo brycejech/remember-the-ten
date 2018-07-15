@@ -25,12 +25,41 @@ body
 #page-wrapper
     min-height: 100%
 
+.card
+    background-color: white
+    padding: 15px
+    margin-bottom: 15px
+    box-shadow: 1px 1px 1px rgba($gray, 0.35)
+
+.btn
+    margin-bottom: 10px
+    padding: 12px 15px
+
+    font-family: 'Source Sans Pro', sans-serif
+    font-weight: bold
+    font-size: 2rem
+    text-decoration: none
+
+    background-color: $gray
+    color: $white
+
+    transition: all .25s ease
+
+    &:hover
+        background-color: darken($gray, 5%)
+
+.btn-block
+    display: block
+    width: 100%
+    text-align: center
+
 @import 'theme/nav'
 
 @import 'theme/home'
 
 .container
-    border: 1px solid $gray
+    padding: 25px
+    background-color: white
 
 
 footer,
@@ -41,3 +70,51 @@ footer,
     left: 0
     right: 0
     border-top: 1px solid $gray
+
+
+//  ============
+//  THE TEN PAGE
+//  ============
+
+#the-ten
+    .container
+        background-color: transparent
+
+    .person
+        background-color: white
+        padding: 15px 30px
+        margin: 15px 0
+
+        @media screen and (min-width: 768px)
+            padding: 15px
+
+        .name
+            font-weight: bold
+            font-size: 2.2rem
+            color: $dark-orange
+        .role
+            font-size: 1.8rem
+            color: lighten($gray, 25%)
+            font-style: italic
+        .born
+            font-size: 1.6rem
+
+        .info
+            width: 100%
+            display: inline-block
+            text-align: center
+
+            @media screen and (min-width: 768px)
+                width: auto
+                margin-left: 0
+                transform: none
+                text-align: left
+
+    .headshot
+        float: none
+        display: block
+        margin: 0 auto
+
+        @media screen and (min-width: 768px)
+            float: left
+            margin-right: 10px

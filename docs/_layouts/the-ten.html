@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<style>
+</style>
+
+<section id="the-ten">
+    <div class="container container-xl">
+        <h1 class="u-cntr">{{ page.title }}</h1>
+
+        <div class="col-md-9">
+
+            <div class="card">
+                <h3>I'm Free</h3>
+                <p>
+                    Don't grieve for me, for now I'm free; I'm following the path God laid for me. I took His hand when I heard Him call; I turned my back and left it all.
+                </p>
+                <p>
+                    I could not stay another day, to laugh, to love, to work or play. Tasks left undone must stay that way; I found that peace at the close of the day.
+                </p>
+                <p>
+                    If my parting has left a void, then fill it with remembered joy. A friendship shared, a laugh, a kiss, oh yes, these things I too, will miss.
+                </p>
+                <p>
+                    Be not burdened with times of sorrow; I wish you the sunshine of tomorrow. My life's been full, I've savored much; good friends, good times, a loved one's touch.
+                </p>
+                <p>
+                    Perhaps my time seemed all too brief; don't lengthen it now with undue grief. Lift up your heart and share with me; God wanted me now, He set me free.
+                </p>
+                <p>
+                    <span style="padding-left: 25px">- <em>Read by Andre Williams at the Memorial Service</em></span>
+                </p>
+            </div>
+
+        {%- for person in site.the_ten -%}
+            <div class="person card">
+                <img src="{{ baseurl }}/assets/img/{{ person.headshot }}" alt="{{ person.name }}" class="headshot">
+                <div class="info">
+                    <span class="name">{{ person.name }}</span><br>
+                    <span class="role">{{ person.role }}</span><br>
+                    <span class="born">{{ person.born }}</span>
+                </div>
+                <div class="u-cb"></div>
+                <p>
+                  {{ person.content }}
+                </p>
+            </div>
+
+        {%- endfor -%}
+        </div>
+
+        <div class="col-md-3">
+            {%- include sidebar.html -%}
+        </div>
+
+    </div>
+</section>
