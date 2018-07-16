@@ -1,0 +1,37 @@
+
+<div class="row scholarship-links">
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2017" class="btn btn-block btn-secondary">2017</a>
+    </div>
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2016" class="btn btn-block btn-secondary">2016</a>
+    </div>
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2015" class="btn btn-block btn-secondary">2015</a>
+    </div>
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2014" class="btn btn-block btn-secondary">2014</a>
+    </div>
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2013" class="btn btn-block btn-secondary">2013</a>
+    </div>
+    <div class="col-2">
+        <a href="{{ site.baseurl }}/scholarships/2012" class="btn btn-block btn-secondary">2012</a>
+    </div>
+</div>
+
+<script>
+    'use strict';
+
+    // give '.active' to current page link
+    (() => {
+        const links = [].slice.call(document.querySelectorAll('.scholarship-links a'));
+
+        links.forEach(link => {
+            const linkpath = link.pathname.replace(/(\/)$/, ''),
+                  pathname = window.location.pathname.replace(/(\/)$/, '');
+
+            if(linkpath === pathname) link.className += ' active';
+        });
+    })();
+</script>
