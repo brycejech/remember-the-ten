@@ -5,12 +5,34 @@ layout: default
 <section id="hero">
     <img src="{{ site.baseurl }}/assets/img/hero.png" alt="Hero Image">
 </section>
-{%- if page.title -%}
-    <h1 class="page-heading u-cntr">{{ page.title }}</h1>
-{%- endif -%}
 
-<div class="container container-lg">
+<section>
 
-  {{ content }}
+    <div class="container container-xl">
 
-</div>
+        <div class="row">
+            <div class="col-3">
+                <div class="card">
+                    <a href="{{ site.baseurl }}/letter/">The Letter</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="{{ site.baseurl }}/counseling/">Counseling</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="{{ site.baseurl }}/support/">Support</a>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card">
+                    <a href="{{ site.baseurl }}/special-message/">Remembering the Four</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
