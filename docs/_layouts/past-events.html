@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="post">
+
+    <header class="page-header u-cntr">
+        <h1 class="page-heading">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            {{ content }}
+        </div>
+
+        <div class="row">
+            {% assign sorted = site.past_events | sort:'year' | reverse %}
+            {% for event in sorted %}
+                <div class="card">
+                    <h3>{{ event.year }} - {{ event.title }}</h3>
+                    <p>{{ event.summary }}</p>
+                    <p>{{ event.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</article>
