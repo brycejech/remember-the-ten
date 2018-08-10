@@ -11,13 +11,14 @@ layout: page
         </tr>
     </thead>
     <tbody>
-        {% for person in site.contacts %}
+        {% assign people = site.contacts | where: 'active', true | sort: 'order' %}
+        {% for person in people %}
             <tr>
                 <td>{{ person.name }}</td>
                 <td>{{ person.email }}</td>
                 <td>
                     {% for role in person.roles %}
-                        <span class="role">{{ role }}</span>
+                        <span class="pill role">{{ role }}</span>
                     {% endfor %}
                 </td>
             </tr>
