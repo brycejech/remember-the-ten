@@ -1,8 +1,4 @@
 ---
 title: RT10 Steering Committee
-layout: page
+layout: committee
 ---
-
-{% for person in site.data.committee %}
-<h5>{{ person.name }} - {{ person.role }}</h5>
-{% endfor %}

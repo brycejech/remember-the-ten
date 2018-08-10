@@ -1,45 +1,65 @@
 - name: Kerry Alexander
-  role: Event Founder and Chair - Sponsor Liaison - Public Relations
-  
+  roles:
+      - Event Founder and Chair
+      - Sponsor Liaison
+      - Public Relations
+
 - name: Becky Shipley
-  role: Event Co-Chair - Operations - Family Liaison
-  
+  roles:
+      - Event Co-Chair
+      - Operations
+      - Family Liaison
+
 - name: Jason Pogue
-  role: Event Co-Chair - Scholarship Chair - Treasurer
-  
+  roles:
+      - Event Co-Chair
+      - Scholarship Chair
+      - Treasurer
+
 - name: Sean McCabe
-  role: Race Director
-  
+  roles:
+      - Race Director
+
 - name: Kati Blodgett
-  role: Co-Volunteer Chair
-  
+  roles:
+      - Co-Volunteer Chair
+
 - name: Kristi Miller
-  role: Co-Volunteer Chair
-  
+  roles:
+      - Co-Volunteer Chair
+
 - name: Brianne Hinojosa
-  role: Advertising Chair
-  
+  roles:
+      - Advertising Chair
+
 - name: Matt Fletcher
-  role: Co-Webmaster
-  
+  roles:
+      - Co-Webmaster
+
 - name: Lynda Halley
-  role: Co-Webmaster
-  
+  roles:
+      - Co-Webmaster
+
 - name: David Rolle
-  role: Awards
-  
+  roles:
+      - Awards
+
 - name: Doug Branstetter
-  role: In-Kind Sponsorships
-  
+  roles:
+      - In-Kind Sponsorships
+
 - name: Trevor Richardson
-  role: OSU Counseling Services Representative
-  
+  roles:
+      - OSU Counseling Services Representative
+
 - name: Eddie Sutton
-  role: Honorary Chairman
-  
+  roles:
+      - Honorary Chairman
+
 - name: Dave Martin
-  role: Athletic Department Liaison
-  
+  roles:
+      - Athletic Department Liaison
+
 - name: Rachel Tribble
-  role: OSU Foundation Liaison
-  
+  roles:
+      - OSU Foundation Liaison

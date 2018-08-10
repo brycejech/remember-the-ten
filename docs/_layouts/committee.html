@@ -1,0 +1,24 @@
+---
+layout: page
+---
+
+<table>
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Roles</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for person in site.data.committee %}
+        <tr>
+            <td>{{ person.name }}</td>
+            <td>
+                {% for role in person.roles %}
+                <span class="pill role">{{ role }}</span>
+                {% endfor %}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
