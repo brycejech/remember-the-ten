@@ -1,5 +1,5 @@
 ---
 title: 2015 Scholarship Winners
-layout: scholarships
+layout: scholarship-winners
 year: s2015
 ---

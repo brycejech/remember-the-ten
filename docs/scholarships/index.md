@@ -1,4 +1,0 @@
----
-title: Scholarships
-layout: scholarships
----
