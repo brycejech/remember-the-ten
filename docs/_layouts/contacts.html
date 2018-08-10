@@ -1,0 +1,26 @@
+---
+layout: page
+---
+
+<table id="contacts-table">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Roles</td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for person in site.contacts %}
+            <tr>
+                <td>{{ person.name }}</td>
+                <td>{{ person.email }}</td>
+                <td>
+                    {% for role in person.roles %}
+                        <span class="role">{{ role }}</span>
+                    {% endfor %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
