@@ -1,6 +1,8 @@
 ---
-name: 'Trevor Richardson'
-email: 'trevor.richardson@okstate.edu'
+name: Trevor Richardson
+email: trevor.richardson@okstate.edu
 roles:
-    - OSU Counseling Services Representative
+    - Athletic Department Liason
+active: true
+order: 9
 ---
