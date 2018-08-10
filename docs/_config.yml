@@ -49,7 +49,7 @@ github_username:  brycejech
 # ===========
 # COLLECTIONS
 # ===========
-
+collections_dir: collections
 collections:
     - the_ten
     - contacts
