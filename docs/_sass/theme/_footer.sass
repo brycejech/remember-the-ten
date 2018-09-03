@@ -12,7 +12,11 @@ footer,
     text-align: center
 
     a
-        color: $white
+        color: darken($white, 20%)
+        text-decoration: none
+
+        &:hover
+            color: $white
 
     ul
         list-style-type: none
@@ -23,6 +27,9 @@ footer,
         margin: 0
         padding: 0
 
+    .ftr-heading
+        font-weight: 700
+
 .ribbon
     margin: 0
     padding: 10px
@@ -32,7 +39,7 @@ footer,
 
     p
         margin: 0
-        
+
         a
             position: relative
             margin: 0 7px
